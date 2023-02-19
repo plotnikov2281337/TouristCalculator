@@ -46,7 +46,7 @@ namespace Tourists
 
             double totalCost = 0;
 
-            bool isFromEU = !(_departureCity.Name == "Мадрид" || _departureCity.Name == "Кишинёв" || _departureCity.Name == "Лондон");
+            
 
             for (int k = 0; k < _citiesToVisit.Count; k++)
             {
@@ -55,6 +55,8 @@ namespace Tourists
 
             foreach (var city in _citiesToVisit)
             {
+                bool isFromEU = !(_departureCity.Name == "Мадрид" || _departureCity.Name == "Кишинёв" || _departureCity.Name == "Лондон");
+                
                 if (_departureCity.Name == "Мадрид")
                 {
                     totalCost += DB.city3.Transit;
