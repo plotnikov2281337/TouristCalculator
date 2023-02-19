@@ -9,7 +9,7 @@ namespace Tourists
 
         static void Main(string[] args)
         {
-            var DB = new CityDB();
+            var DB = new CityDB(_cities: cities);
             DB.initial();
 
             Console.WriteLine("Добро пожаловать в калькулятор стоимости поездки!");
