@@ -75,22 +75,22 @@ namespace Tourists
                 }
                 if (city.Name == "Ватикан")
                 {
-                    totalCost += totalCost * 0.5;
+                    totalCost += totalCost * 1.5;
                 }
                 if (city.Name == "Берлин")
                 {
-                    totalCost += city.Transit * 0.13;
+                    totalCost += city.Transit * 1.13;
                 }
                 if (city.Name == "Палермо")
                 {
                     if (_departureCity == DB.city5)
-                        totalCost += city.Transit * 0.07;
+                        totalCost += city.Transit * 1.07;
                     if (_departureCity == DB.city9)
-                        totalCost += city.Transit * 0.11;
+                        totalCost += city.Transit * 1.11;
                 }
                 if (city.Name == "Рига" && _departureCity == DB.city3)
                 {
-                    totalCost += city.Transit * 0.09;
+                    totalCost += city.Transit * 1.09;
                 }
                 if (city.Name == "Палермо")
                 {
@@ -98,7 +98,7 @@ namespace Tourists
                 }
                 if (!isFromEU)
                 {
-                    totalCost += city.Transit * 0.04;
+                    totalCost += city.Transit * 1.04;
                 }
                 else
                 {
