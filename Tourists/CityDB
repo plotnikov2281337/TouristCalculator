@@ -9,7 +9,7 @@ namespace Tourists
 {
     internal class CityDB
     {
-        List<City> cities { get; set; }
+        public List<City> cities { get; set; }
         public CityDB (List<City> _cities)
         {
             cities = _cities;
